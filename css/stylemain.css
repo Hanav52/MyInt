@@ -40,6 +40,13 @@ a:hover {
   padding: 0rem 2rem; /* 좌우 padding 을 살짝 주어서, 좌우에 딱 붙지 않도록 함 */
   overflow: hidden; /* 넘치는 영역에 대해서는 표시안되도록 작성해야 함 */
 }
+.inner1 {
+  width: 100%; /* 가로 사이즈가 1200px 넘는 해상도에서는 max-width 설정 */
+  height: 100%; /* align-items 등으로 수직 가운데 정렬을 위해, 알맞은 height 설정이 필요함 */
+  margin: 0 auto; /* 가운데 정렬: 동일 요소에 width 가 설정되어 있을 때에만 적용 */
+  padding: 0rem 2rem; /* 좌우 padding 을 살짝 주어서, 좌우에 딱 붙지 않도록 함 */
+  overflow: hidden; /* 넘치는 영역에 대해서는 표시안되도록 작성해야 함 */
+}
 
 header {
   width: 100%;
@@ -96,16 +103,46 @@ section {
   background-color: #fff;
   position: relative;
 }
-
+/* 여기는 another.html 부분입니다. */
 .program1 {
   margin-top: 100px;
   padding: 0 2rem;
   display: flex;
 }
+.program11 {
+  margin-top: 150px;
+  padding: 0 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+}
+.program1-1 {
+  display: flex;
+}
+
+.program112 {
+  padding: 0 2rem;
+}
+
+.program113 {
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+
+.pro-head {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.pro-body {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
 
 .title-container {
   padding-top: 100px;
-  padding-bottom: 100px;
 }
 
 .title {
@@ -113,6 +150,16 @@ section {
   font-weight: bold;
   color: #fff;
   margin-bottom: 0.8rem;
+}
+.login-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.login-subtitle {
+  font-size: 1.2rem;
+}
+.login-maintitle {
+
 }
 
 .message {
@@ -144,6 +191,10 @@ section {
      offset-x | offset-y | blur-radius | spread-radius | color */
   box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, 0.2);
   transition: 0.4s;
+}
+
+.titile {
+  margin-left: 2rem;
 }
 
 .skill:hover {
@@ -209,7 +260,7 @@ section {
 .slide-prev {
   font-size: 2rem;
   cursor: pointer;
-  color: rgb(47, 48, 89);
+  color: #f1c232;
 }
 
 .slide-next {
@@ -276,7 +327,7 @@ section {
 .class-format {
   font-size: 0.9rem;
   color: #fff;
-  background-color: #0d47a1;
+  background-color: #ffd966;
   padding: 0.2rem;
 }
 
@@ -310,7 +361,6 @@ li a:hover {
 }
 
 footer {
-  border-top: 3px solid #e4e4e4;
   background-color: #f8f9fa;
   padding: 1rem 0;
   margin: 1rem 0;
@@ -331,8 +381,11 @@ footer {
 }
 
 .footer-copyright {
+  border-top: 3px solid #cfcfcf;
+  text-align: center;
   color: #545e6f;
   margin: 1rem 0.5rem;
+  padding: 1rem;
 }
 
 .program1-container {
@@ -341,6 +394,13 @@ footer {
   height: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.program12-container {
+  margin-top: 100px;
+  width: 100%;
+  height: 100%;
+  display: flex;
   align-items: center;
 }
 .program2-container {
@@ -364,6 +424,15 @@ footer {
   width: 650px;
   height: 350px;
   background-color: rgba(196, 196, 196, 0.34);
+}
+.login-explain {
+  width: 1420px;
+  height: 150px;
+  background-color: rgba(196, 196, 196, 0.34);
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+
 }
 .program2-explain {
   margin-right: 2rem;
@@ -406,6 +475,11 @@ footer {
   }
   .program1 {
     max-width: 1500px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .inner1 {
+    max-width: 1200px;
   }
 }
 
