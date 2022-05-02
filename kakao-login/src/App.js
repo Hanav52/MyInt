@@ -1,4 +1,3 @@
-import "./css/App.css";
 import Auth from "./Auth";
 import Profile from "./Profile";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -13,9 +12,9 @@ function App() {
       <div className="App">
         <Switch>
           <Route exact path="/">
-            <h1>
-              <a href={KAKAO_AUTH_URL}>Kakao Login</a>
-            </h1>
+            <a href={KAKAO_AUTH_URL}>
+              <img src={ require('./img/kakao_login.png') } alt="카카오로그인"/>
+            </a>
           </Route>
           <Route path="/oauth/kakao/callback">
             <Auth />

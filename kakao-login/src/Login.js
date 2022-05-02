@@ -1,18 +1,20 @@
 import "./css/style.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import App from './App';
 
 function login() {
+  
 
   return (
     <section>
-        <div class="main">
-        <div class="inner">
-            <div class="login">
-            <div class="font-title">로그인</div>
-            <div class="kakao">
-                <img src="img/kakao_login.png" alt="카카오로그인"/>
+        <div className="main">
+        <div className="inner">
+            <div className="login">
+            <div className="font-title">로그인</div>
+            <div className="kakao">
+                <App/>
             </div>
-            <div class="first">처음화면</div>
+            <div className="first" target="">처음화면</div>
             </div>
         </div>
         </div>
