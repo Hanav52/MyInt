@@ -1,12 +1,10 @@
 import "./css/style.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
-import { BrowserRouter as Router } from "react-router-dom";
 
 function Login() {
   
   return (
-    <Router>
     <section>
         <div className="main">
         <div className="inner">
@@ -20,7 +18,6 @@ function Login() {
         </div>
         </div>
     </section>
-    </Router>
   );
 }
 

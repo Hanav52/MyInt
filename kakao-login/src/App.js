@@ -1,6 +1,9 @@
 import Auth from "./Auth";
 import Profile from "./Profile";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import kakao from './img/kakao_login.png';
+import "./css/style.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const REST_API_KEY = "572dfd151f0b3039b01dfb3655e13389";
@@ -11,10 +14,23 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
-          <Route exact path="/">
-            <a href={KAKAO_AUTH_URL}>
-              <img src={ require('./img/kakao_login.png') } alt="카카오로그인"/>
-            </a>
+          <Route exact path="/app">
+          <section>
+              <div className="main">
+              <div className="inner">
+                  <div className="login">
+                  <div className="font-title">로그인</div>
+                  <div className="kakao">
+                  <a href={KAKAO_AUTH_URL}>
+                    <img src={kakao} alt="카카오로그인"/>
+                  </a>
+                  </div>
+                  <div className="first">처음화면</div>
+                  </div>
+              </div>
+              </div>
+          </section>
+           
           </Route>
           <Route path="/oauth/kakao/callback">
             <Auth />

@@ -3,13 +3,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import Login from './Login';
 import Program from "./Program";
+import App from "./App";
 
 function ProHeader() {
 
   return (
     <Router>
       <Switch>
-      <Route path="/login" component={Login}></Route>
+      <Route path="/app" component={App}></Route>
       <Route path="/program1" component={Program}></Route>
       
     <header>
@@ -30,7 +31,7 @@ function ProHeader() {
               <Link className="nav-link fw-bold link-warning" to="/login">문의</Link>
             </li>
           </ul>
-          <button type="button" className="head-blog btn btn lg btn-warning"><Link to="/login">로그인</Link></button>
+          <button type="button" className="head-blog btn btn lg btn-warning"><Link to="/app">로그인</Link></button>
         </div>
       </div>
     </header>
