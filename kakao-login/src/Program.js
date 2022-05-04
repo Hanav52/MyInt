@@ -1,33 +1,28 @@
 import "./css/stylemain.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ProHeader from './Header';
 
-function ProHeader() {
-    
+function Program() {
 
   return (
-    <header>
-      <div class="inner">
-        <div class="head-container">
-          <div class="head-brand"><a href="main.html">MyInt</a></div>
-          <ul class="nav justify-content-center">
-            <li class="nav-item fw-bold link-warning">
-              <a class="nav-link fw-bold link-warning" aria-current="page" href="#">참고사이트</a>
-            </li>
-            <li class="nav-item fw-bold link-warning">
-              <a class="nav-link fw-bold link-warning" href="#">도구</a>
-            </li>
-            <li class="nav-item fw-bold link-warning">
-              <a class="nav-link fw-bold link-warning" href="program.html">프로그램</a>
-            </li>
-            <li class="nav-item fw-bold link-warning">
-              <a class="nav-link fw-bold link-warning" href="#">문의</a>
-            </li>
-          </ul>
-          <button type="button" class="head-blog btn btn lg btn-warning"><a href="login.js">로그인</a></button>
-        </div>
-      </div>
-    </header>
+    /* 메인 이미지 섹션  footer 부분 */
+    <div>
+        <ProHeader/>
+        <section class="program">
+            <div class="program-box" align="center">
+                hello
+            </div>
+        </section>
+        <footer>
+            <div class="inner">
+             <div class="footer-message">MyInt</div>
+             <div class="footer-copyright">© MyInt. Make your House!</div>
+            </div>
+        </footer>
+        <a id="backtotop"></a>
+        <script src="js/main.js"></script>
+    </div>
   );
 }
 
-export default ProHeader;
+export default Program;

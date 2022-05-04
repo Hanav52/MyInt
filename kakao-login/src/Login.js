@@ -2,8 +2,7 @@ import "./css/style.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 
-function login() {
-  
+function Login() {
 
   return (
     <section>
@@ -22,4 +21,4 @@ function login() {
   );
 }
 
-export default login;
+export default Login;
