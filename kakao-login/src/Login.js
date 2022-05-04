@@ -1,10 +1,12 @@
 import "./css/style.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
+import { BrowserRouter as Router } from "react-router-dom";
 
 function Login() {
-
+  
   return (
+    <Router>
     <section>
         <div className="main">
         <div className="inner">
@@ -13,11 +15,12 @@ function Login() {
             <div className="kakao">
                 <App/>
             </div>
-            <div className="first" target="">처음화면</div>
+            <div className="first">처음화면</div>
             </div>
         </div>
         </div>
     </section>
+    </Router>
   );
 }
 

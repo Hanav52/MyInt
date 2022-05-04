@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import ProHeader from './Header';
-import Login from './Login';
+import Program from './Program';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Login/>
+    <Program/>
   </React.StrictMode>,
   document.getElementById('root')
 );
