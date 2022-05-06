@@ -5,10 +5,11 @@ import Program from './Program';
 import Real from './real';
 import App from './App';
 import ProHeader from './Header';
+import RealMain from './RealMain';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Program/>
+    <RealMain/>
   </React.StrictMode>,
   document.getElementById('root')
 );
