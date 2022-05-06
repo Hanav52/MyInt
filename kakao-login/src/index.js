@@ -9,7 +9,7 @@ import RealMain from './RealMain';
 
 ReactDOM.render(
   <React.StrictMode>
-    <RealMain/>
+    <Program/>
   </React.StrictMode>,
   document.getElementById('root')
 );

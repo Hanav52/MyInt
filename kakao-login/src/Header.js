@@ -1,9 +1,9 @@
 import "./css/stylemain.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
-import Login from './Login';
 import Program from "./Program";
 import App from "./App";
+import RealMain from "./RealMain";
 
 function ProHeader() {
 
@@ -11,12 +11,13 @@ function ProHeader() {
     <Router>
       <Switch>
       <Route path="/app" component={App}></Route>
-      <Route path="/program1" component={Program}></Route>
+      <Route path="/program" component={Program}></Route>
+      <Route exact path="/" component={RealMain}></Route>
       
     <header>
       <div className="inner">
         <div className="head-container">
-          <div className="head-brand"><Link to="/program1">MyInt</Link></div>
+          <div className="head-brand"><Link to="/realmain">MyInt</Link></div>
           <ul className="nav justify-content-center">
             <li className="nav-item fw-bold link-warning">
               <Link className="nav-link fw-bold link-warning" to="/program2">참고사이트</Link>
@@ -25,7 +26,7 @@ function ProHeader() {
               <Link className="nav-link fw-bold link-warning" to="/program3">도구</Link>
             </li>
             <li className="nav-item fw-bold link-warning">
-              <Link className="nav-link fw-bold link-warning" to="/program4">프로그램</Link>
+              <Link className="nav-link fw-bold link-warning" to="/program">프로그램</Link>
             </li>
             <li className="nav-item fw-bold link-warning">
               <Link className="nav-link fw-bold link-warning" to="/login">문의</Link>
