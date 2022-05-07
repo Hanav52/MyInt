@@ -2,10 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import Program from './Program';
-import Real from './real';
-import App from './App';
-import ProHeader from './Header';
-import RealMain from './RealMain';
 
 ReactDOM.render(
   <React.StrictMode>
