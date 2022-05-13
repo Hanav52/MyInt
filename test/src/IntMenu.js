@@ -26,7 +26,7 @@ function Program() {
                 </div>
                 <ul class="class-list">
                     <li class="class-card">
-                    <a href="http://school.fastcampus.co.kr/blog/all/113/" target="_bladnk">
+                    <a href="http://school.fastcampus.co.kr/blog/all/113/" target="#">
                         <img src="img/firstimage.png" alt="클릭했을때 나오는 설명" class="class-image" />
                         <div class="class-container">
                         <div class="class-skill">
@@ -41,7 +41,7 @@ function Program() {
                     </a>
                     </li>
                     <li class="class-card">
-                    <a href="http://www.yes24.com/Product/Goods/60212672?OzSrank=1" target="_bdlank">
+                    <a href="http://www.yes24.com/Product/Goods/60212672?OzSrank=1" target="#">
                         <img src="img/firstimage.png" alt="클릭했을때 나오는 설명" class="class-image" />
                         <div class="class-container">
                         <div class="class-skill">
@@ -56,7 +56,7 @@ function Program() {
                     </a>
                     </li>
                     <li class="class-card">
-                    <a href="hhttp://www.yes24.com/Product/Goods/43504370?OzSrank=1" target="_dblank">
+                    <a href="hhttp://www.yes24.com/Product/Goods/43504370?OzSrank=1" target="#">
                         <img src="img/firstimage.png" alt="클릭했을때 나오는 설명" class="class-image" />
                         <div class="class-container">
                         <div class="class-skill">
@@ -71,7 +71,7 @@ function Program() {
                     </a>
                     </li>
                     <li class="class-card">
-                    <a href="http://www.yes24.com/Product/Goods/1461768?OzSrank=8" target="_bdlank">
+                    <a href="http://www.yes24.com/Product/Goods/1461768?OzSrank=8" target="#">
                         <img src="img/firstimage.png" alt="클릭했을때 나오는 설명" class="class-image" />
                         <div class="class-container">
                         <div class="class-skill">
@@ -86,7 +86,7 @@ function Program() {
                     </a>
                     </li>
                     <li class="class-card">
-                    <a href="http://www.yes24.com/Product/Goods/3369009" target="_blandk">
+                    <a href="http://www.yes24.com/Product/Goods/3369009" target="#">
                         <img src="img/firstimage.png" alt="클릭했을때 나오는 설명" class="class-image" />
                         <div class="class-container">
                         <div class="class-skill">
@@ -116,7 +116,7 @@ function Program() {
                 </div>
                 <ul class="class-list">
                     <li class="class-card">
-                    <a href="http://school.fastcampus.co.kr/blog/all/113/" target="_bladnk">
+                    <a href="http://school.fastcampus.co.kr/blog/all/113/" target="#">
                         <img src="img/firstimage.png" alt="입력했을때 뜨는 이름" class="class-image" />
                         <div class="class-container">
                         <div class="class-skill">
@@ -131,7 +131,7 @@ function Program() {
                     </a>
                     </li>
                     <li class="class-card">
-                    <a href="http://www.yes24.com/Product/Goods/60212672?OzSrank=1" target="_bldank">
+                    <a href="http://www.yes24.com/Product/Goods/60212672?OzSrank=1" target="#">
                         <img src="img/firstimage.png" alt="입력했을때 뜨는 이름" class="class-image" />
                         <div class="class-container">
                         <div class="class-skill">
@@ -146,7 +146,7 @@ function Program() {
                     </a>
                     </li>
                     <li class="class-card">
-                    <a href="hhttp://www.yes24.com/Product/Goods/43504370?OzSrank=1" target="_bladnk">
+                    <a href="hhttp://www.yes24.com/Product/Goods/43504370?OzSrank=1" target="#">
                         <img src="img/firstimage.png" alt="입력했을때 뜨는 이름" class="class-image" />
                         <div class="class-container">
                         <div class="class-skill">
@@ -161,7 +161,7 @@ function Program() {
                     </a>
                     </li>
                     <li class="class-card">
-                    <a href="http://www.yes24.com/Product/Goods/1461768?OzSrank=8" target="_dblank">
+                    <a href="http://www.yes24.com/Product/Goods/1461768?OzSrank=8" target="#">
                         <img src="img/firstimage.png" alt="입력했을때 뜨는 이름" class="class-image" />
                         <div class="class-container">
                         <div class="class-skill">
@@ -176,7 +176,7 @@ function Program() {
                     </a>
                     </li>
                     <li class="class-card">
-                    <a href="http://www.yes24.com/Product/Goods/3369009" target="_blsank">
+                    <a href="http://www.yes24.com/Product/Goods/3369009" target="#">
                         <img src="img/firstimage.png" alt="입력했을때 뜨는 이름" class="class-image" />
                         <div class="class-container">
                         <div class="class-skill">
@@ -206,7 +206,7 @@ function Program() {
                 </div>
                 <ul class="class-list">
                     <li class="class-card">
-                    <a href="http://school.fastcampus.co.kr/blog/all/113/" target="_blasnk">
+                    <a href="http://school.fastcampus.co.kr/blog/all/113/" target="#">
                         <img src="img/firstimage.png" alt="입력했을때 뜨는 이름" class="class-image" />
                         <div class="class-container">
                         <div class="class-skill">
@@ -221,7 +221,7 @@ function Program() {
                     </a>
                     </li>
                     <li class="class-card">
-                    <a href="http://www.yes24.com/Product/Goods/60212672?OzSrank=1" target="_blsank">
+                    <a href="http://www.yes24.com/Product/Goods/60212672?OzSrank=1" target="#">
                         <img src="img/firstimage.png" alt="입력했을때 뜨는 이름" class="class-image" />
                         <div class="class-container">
                         <div class="class-skill">
@@ -236,7 +236,7 @@ function Program() {
                     </a>
                     </li>
                     <li class="class-card">
-                    <a href="hhttp://www.yes24.com/Product/Goods/43504370?OzSrank=1" target="_blsank">
+                    <a href="hhttp://www.yes24.com/Product/Goods/43504370?OzSrank=1" target="_b#lank">
                         <img src="img/firstimage.png" alt="입력했을때 뜨는 이름" class="class-image" />
                         <div class="class-container">
                         <div class="class-skill">
@@ -251,7 +251,7 @@ function Program() {
                     </a>
                     </li>
                     <li class="class-card">
-                    <a href="http://www.yes24.com/Product/Goods/1461768?OzSrank=8" target="_bslank">
+                    <a href="http://www.yes24.com/Product/Goods/1461768?OzSrank=8" target="#">
                         <img src="img/firstimage.png" alt="입력했을때 뜨는 이름" class="class-image" />
                         <div class="class-container">
                         <div class="class-skill">
@@ -266,7 +266,7 @@ function Program() {
                     </a>
                     </li>
                     <li class="class-card">
-                    <a href="http://www.yes24.com/Product/Goods/3369009" target="_ssblank">
+                    <a href="http://www.yes24.com/Product/Goods/3369009" target="#">
                         <img src="img/firstimage.png" alt="입력했을때 뜨는 이름" class="class-image" />
                         <div class="class-container">
                         <div class="class-skill">

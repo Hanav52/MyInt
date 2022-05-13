@@ -2,12 +2,7 @@ import "./css/stylemain.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ProHeader from './Header';
 import Footer from "./Footer";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import App from "./App";
 import Program from "./Program";
 

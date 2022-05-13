@@ -1,28 +1,17 @@
 import "./css/stylemain.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ProHeader from './Header';
 import Footer from "./Footer";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-import App from "./App";
-import Program from "./Program";
+import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
+import { Route } from "react-router-dom";
 
 function RealMain() {
 
   return (
     /* 메인 이미지 섹션  footer 부분 */
     <div>
-        <ProHeader/>
-        <Router>
-          <Switch>
-          <Route exact path="/"></Route>
-          <Route path="/app" component={App}></Route>
-          <Route path="/program" component={Program}></Route>
-          <Route path="/realmain" component={RealMain}></Route>
+        <BrowserRouter>
+        <Route exact path="/">
         <section>
           <div className="inner">
             <div className="program11">
@@ -43,7 +32,9 @@ function RealMain() {
                 <div className="pro-body">여기에는 이 프로그램에 대한 설명을 적을 예정입니다. 하지만 프로그램 개수가 많아질수록
                 <br/> 설명하는것도 많아질 예정입니다.</div>
                 <div className="pro-button ">
-                  <button type="button" className="head-blog btn btn lg btn-outline-warning"><Link to="/program">더보기</Link></button>
+                  <button type="button" className="head-blog btn btn lg btn-outline-warning">
+                    <Link to="/program">더보기</Link>
+                  </button>
                 </div>
               </div>
             </div>
@@ -53,7 +44,9 @@ function RealMain() {
                 <div className="pro-body">여기에는 이 프로그램에 대한 설명을 적을 예정입니다. 하지만 프로그램 개수가 많아질수록
                 <br/>설명하는것도 많아질 예정입니다.</div>
                 <div className="pro-button ">
-                  <button type="button" className="head-blog btn btn lg btn-outline-warning"><Link to="/program">더보기</Link></button>
+                  <button type="button" className="head-blog btn btn lg btn-outline-warning">
+                    <Link to="/program">더보기</Link>
+                  </button>
                 </div>
               </div>
               <div className="program113">
@@ -61,7 +54,9 @@ function RealMain() {
                 <div className="pro-body">여기에는 이 프로그램에 대한 설명을 적을 예정입니다. 하지만 프로그램 개수가 많아질수록
                 <br/>설명하는것도 많아질 예정입니다.</div>
                 <div className="pro-button ">
-                  <button type="button" className="head-blog btn btn lg btn-outline-warning"><Link to="/program">더보기</Link></button>
+                  <button type="button" className="head-blog btn btn lg btn-outline-warning">
+                    <Link to="/program">더보기</Link>
+                  </button>
                 </div>
               </div>
             </div>
@@ -97,15 +92,15 @@ function RealMain() {
               </div>
               <div className="login-mainsubtitle">
               <Link to="/app"><button type="button" className="head-blog btn btn lg btn-warning">로그인</button></Link>
-              <Link to="/app"><button type="button" className="head-blog btn btn lg btn-outline-warning">문의하기</button></Link>
+              <Link to="/알람창"><button type="button" className="head-blog btn btn lg btn-outline-warning">문의하기</button></Link>
               </div>
             </div>
           </div>
           </div>
         </section>
-        </Switch>
-        </Router>
+        </Route>
         <Footer/>
+        </BrowserRouter>
     </div>
   );
 }

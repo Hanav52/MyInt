@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import Program from './Program';
-import App from './App';
+import Real from './real';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App/>
+    <Real/>
   </React.StrictMode>,
   document.getElementById('root')
 );

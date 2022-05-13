@@ -2,7 +2,7 @@ import "./css/stylemain.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ProHeader from './Header';
 import Footer from "./Footer";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function SubMain() {
 
@@ -11,7 +11,7 @@ function SubMain() {
     <div>
         <ProHeader/>
         <Router>
-          <Routes>
+          <Switch>
           <Route path="/SubMain"></Route>
             <section>
             <div class="inner">
@@ -77,7 +77,7 @@ function SubMain() {
             </div>
             </div>
             </section>
-        </Routes>
+        </Switch>
         </Router>
         <Footer/>
     </div>
