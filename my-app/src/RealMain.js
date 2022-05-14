@@ -1,11 +1,22 @@
 import "./css/stylemain.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "./Footer";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 import { Route } from "react-router-dom";
+import Swal from 'sweetalert2'
 
 function RealMain() {
+
+  const mail = () => {
+    Swal.fire('wnsrl8329@gmail.com 으로 연락 주시면 감사합니다.');
+  }
+  const login = () => {
+    window.location.href="/app";
+  }
+  const program1 = () => {
+    window.location.href="/program";
+  }
 
   return (
     /* 메인 이미지 섹션  footer 부분 */
@@ -24,7 +35,7 @@ function RealMain() {
                   <div className="pro-body">여기에는 이 프로그램에 대한 설명을 적을 예정입니다. 하지만 프로그램 개수가 많아질수록
                   <br/>설명하는것도 많아질 예정입니다.</div>
                   <div className="pro-button ">
-                    <button type="button" className="head-blog btn btn lg btn-outline-warning"><Link to="/program">더보기</Link></button>
+                    <button type="button" className="head-blog btn btn lg btn-outline-warning" onClick={program1}>더보기</button>
                   </div>
               </div>
               <div className="program112">
@@ -32,9 +43,7 @@ function RealMain() {
                 <div className="pro-body">여기에는 이 프로그램에 대한 설명을 적을 예정입니다. 하지만 프로그램 개수가 많아질수록
                 <br/> 설명하는것도 많아질 예정입니다.</div>
                 <div className="pro-button ">
-                  <button type="button" className="head-blog btn btn lg btn-outline-warning">
-                    <Link to="/program">더보기</Link>
-                  </button>
+                  <button type="button" className="head-blog btn btn lg btn-outline-warning" onClick={program1}>더보기</button>
                 </div>
               </div>
             </div>
@@ -44,9 +53,7 @@ function RealMain() {
                 <div className="pro-body">여기에는 이 프로그램에 대한 설명을 적을 예정입니다. 하지만 프로그램 개수가 많아질수록
                 <br/>설명하는것도 많아질 예정입니다.</div>
                 <div className="pro-button ">
-                  <button type="button" className="head-blog btn btn lg btn-outline-warning">
-                    <Link to="/program">더보기</Link>
-                  </button>
+                  <button type="button" className="head-blog btn btn lg btn-outline-warning" onClick={program1}>더보기</button>
                 </div>
               </div>
               <div className="program113">
@@ -54,9 +61,7 @@ function RealMain() {
                 <div className="pro-body">여기에는 이 프로그램에 대한 설명을 적을 예정입니다. 하지만 프로그램 개수가 많아질수록
                 <br/>설명하는것도 많아질 예정입니다.</div>
                 <div className="pro-button ">
-                  <button type="button" className="head-blog btn btn lg btn-outline-warning">
-                    <Link to="/program">더보기</Link>
-                  </button>
+                  <button type="button" className="head-blog btn btn lg btn-outline-warning" onClick={program1}>더보기</button>
                 </div>
               </div>
             </div>
@@ -91,8 +96,8 @@ function RealMain() {
                 </div>
               </div>
               <div className="login-mainsubtitle">
-              <Link to="/app"><button type="button" className="head-blog btn btn lg btn-warning">로그인</button></Link>
-              <Link to="/알람창"><button type="button" className="head-blog btn btn lg btn-outline-warning">문의하기</button></Link>
+              <Link to="/app"><button type="button" className="head-blog btn btn lg btn-warning" onClick={login}>로그인</button></Link>
+              <Link><button type="button" className="head-blog btn btn lg btn-outline-warning" onClick={mail}>문의하기</button></Link>
               </div>
             </div>
           </div>

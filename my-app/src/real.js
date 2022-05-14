@@ -8,8 +8,13 @@ import { Switch } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 import SubMain from "./SubMain";
 import ProgramEx from "./IntMenu";
+import Swal from 'sweetalert2'
 
 function Real() {
+
+  const mail = () => {
+    Swal.fire('wnsrl8329@gmail.com 으로 연락 주시면 감사합니다.');
+  }
   
   return (
     <div>
@@ -31,7 +36,7 @@ function Real() {
                   <Link className="nav-link fw-bold link-warning" to="/submain">프로그램</Link>
                 </li>
                 <li className="nav-item fw-bold link-warning">
-                  <Link className="nav-link fw-bold link-warning" to="/여기는 알람이 떠야함">문의</Link>
+                  <Link className="nav-link fw-bold link-warning" onClick={mail}>문의</Link>
                 </li>
               </ul>
               <button type="button" className="head-blog btn btn lg btn-warning">

@@ -66,6 +66,14 @@ header {
   align-items: center;
 }
 
+.head-container12 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 /* 필요시 세부 설정을 위해, 상단 좌측 브랜드만을 별도로 클래스로 정의 */
 .head-container .head-brand {
   font-weight: bold;

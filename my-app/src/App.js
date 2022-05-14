@@ -9,6 +9,9 @@ function App() {
   const REST_API_KEY = "572dfd151f0b3039b01dfb3655e13389";
   const REDIRECT_URI = "http://localhost:3000/oauth/kakao/callback";
   const KAKAO_AUTH_URL = `https://kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`;
+  const realmain = () => {
+    window.location.href="/";
+  }
 
   return (
     <Router>
@@ -25,7 +28,7 @@ function App() {
                   <img src={kakao} alt="카카오로그인"/>
                 </a>
                 </div>
-                <Link to="/"><div className="first">처음화면</div></Link>
+                <div className="first" onClick={realmain}>처음화면</div>
                 </div>
             </div>
             </div>

@@ -1,10 +1,8 @@
 import "./css/stylemain.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ProHeader from './Header';
 import Footer from "./Footer";
 import { BrowserRouter as  Route } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
-import { Switch } from "react-router-dom";
 
 function SubMain() {
 
