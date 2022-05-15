@@ -3,7 +3,7 @@ import Profile from "./Profile";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import kakao from './img/kakao_login.png';
 import "./css/style.css";
-import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function App() {
   const REST_API_KEY = "572dfd151f0b3039b01dfb3655e13389";
@@ -11,6 +11,14 @@ function App() {
   const KAKAO_AUTH_URL = `https://kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`;
   const realmain = () => {
     window.location.href="/";
+  }
+  let loginTF = true;
+
+  const [TF, setTF] = useState(loginTF);
+
+  const changeTF = () => {
+    console.log(TF);
+    setTF(TF === true ? "true" + true : "false" + false);
   }
 
   return (
@@ -28,6 +36,7 @@ function App() {
                   <img src={kakao} alt="카카오로그인"/>
                 </a>
                 </div>
+                <button onClick={changeTF}>{TF}</button>
                 <div className="first" onClick={realmain}>처음화면</div>
                 </div>
             </div>
