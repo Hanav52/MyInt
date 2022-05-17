@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import axios from "axios";
 import qs from "qs";
 import { useHistory } from "react-router-dom";
+import Auth from "./Auth";
+import "./css/style.css";
 
 const Auth = () => {
   const REST_API_KEY = "572dfd151f0b3039b01dfb3655e13389";
@@ -15,7 +17,7 @@ const Auth = () => {
 
   const getToken = async () => {
     const payload = qs.stringify({
-      grant_type: "authorization_code.json",
+      grant_type: "authorization_code",
       client_id: REST_API_KEY,
       redirect_uri: REDIRECT_URI,
       code: code,
