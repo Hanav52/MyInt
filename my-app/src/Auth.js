@@ -38,6 +38,7 @@ const Auth = () => {
       console.log(err);
     }
   };
+  
 
   useEffect(() => {
     getToken();

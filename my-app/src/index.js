@@ -2,11 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import Real from './real';
-import App from './App';
-import KakaoLogin from './test copy';
+import App from './App copy';
 ReactDOM.render(
   <React.StrictMode>
-    <Real/>
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
