@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./css/style.css";
 import { useState } from "react";
+import Profile from "./Profile";
 
 function App() {
   const JAVA_API_KEY = "49dbb957eb9235eeec3eaf9f85e5b609";
@@ -17,9 +18,8 @@ function App() {
     setTF(TF === true ? "true" + true : "false" + false);
   }
 
-
         function KakaoLogin() {
-          window.Kakao.init(JAVA_API_KEY);
+        window.Kakao.init(JAVA_API_KEY);
             window.Kakao.Auth.login({
                 scope: 'profile_nickname, account_email',
                 success: function(data) {
@@ -29,6 +29,7 @@ function App() {
                         success: res => {
                             const kakao_account = res.kakao_account;
                             console.log(kakao_account);
+                            alert('어서오세요' + JSON.stringify(res.scope.profile_nickname))
                         }
                     });
                 }
@@ -42,6 +43,7 @@ function App() {
           window.Kakao.Auth.logout(function() {
           alert('logout ok\naccess token -> ' + window.Kakao.Auth.getAccessToken())
           })
+          window.location.reload();
       }
         function unlinkApp() {
             window.Kakao.API.request({
@@ -53,8 +55,8 @@ function App() {
                 alert('fail: ' + JSON.stringify(err))
             },
             })
+            window.location.reload();
         }
-
   return (
     <Router>
       <div className="App">
