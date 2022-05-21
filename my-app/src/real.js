@@ -9,8 +9,19 @@ import { BrowserRouter } from "react-router-dom";
 import SubMain from "./SubMain";
 import ProgramEx from "./IntMenu";
 import Swal from 'sweetalert2'
+import { useEffect, useState } from "react";
+
+
 
 function Real() {
+  //자바스크립트 api key
+  const JAVA_API_KEY = "49dbb957eb9235eeec3eaf9f85e5b609";
+  // 카카오 api 가져오기
+  const LoginApi = () => {
+    window.Kakao.init(JAVA_API_KEY);
+  }
+  // 카카오 api를 렌더링될때 한번만 실행하기
+  useEffect(LoginApi, []);
 
   const mail = () => {
     Swal.fire('wnsrl8329@gmail.com 으로 연락 주시면 감사합니다.');

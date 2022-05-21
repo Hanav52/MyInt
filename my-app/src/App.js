@@ -1,30 +1,19 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./css/style.css";
 import { useEffect, useState } from "react";
 import kakaologin from './img/kakao_login.png'
+import React from 'react';
 
 function App() {
-  //자바스크립트 api key
-  const JAVA_API_KEY = "49dbb957eb9235eeec3eaf9f85e5b609";
-  // 카카오 api 가져오기
-  const LoginApi = () => {
-    window.Kakao.init(JAVA_API_KEY);
-  }
-  // 카카오 api를 렌더링될때 한번만 실행하기
-  useEffect(LoginApi, []);
   // 메인화면으로 이동하기
   const realmain = () => {
     window.location.href="/";
   }
-  // true false로 로그인 로그아웃 구분하기
-  let loginTF = true;
-  const changeTF = () => {
-    console.log(TF);
-    setTF(TF === true ? true + "false" : "false" + false);
-  }
-  // 상태변경 확인하기
-  const [TF, setTF] = useState(loginTF);
 
+  const [visible, setVisible] = useState(false);
+  
+
+  // 로그인함수
    function KakaoLogin() {
       window.Kakao.Auth.login({
         scope: 'profile_nickname, account_email',
@@ -37,11 +26,13 @@ function App() {
                console.log(kakao_account);
                const name = JSON.stringify(kakao_account.profile.nickname);
                alert('어서오세요 ' + name + '님')
+
                 }
             });
           }
       })
   }
+  // 로그아웃 함수
         function kakaoLogout() {
           if (!window.Kakao.Auth.getAccessToken()) {
           alert('로그인후 이용해주세요')
@@ -52,18 +43,31 @@ function App() {
           })
           window.location.reload();
       }
+  // 앱 탈퇴 함수
         function unlinkApp() {
             window.Kakao.API.request({
             url: '/v1/user/unlink',
             success: function(res) {
-                alert('탈퇴되었습니다')
+                alert('탈퇴되었습니다' + res)
             },
             fail: function(err) {
-                alert('로그인후 이용해주세요')
+                alert('로그인후 이용해주세요' + err)
             },
             })
             window.location.reload();
         }
+
+  const Log = () => {
+    return(
+      <div onClick={kakaoLogout}><div className="first" >로그아웃</div></div>
+    );
+  }
+  const Unlink = () => {
+    return(
+      <div onClick={unlinkApp}><div className="first" >앱 탈퇴</div></div>
+    )
+  }
+        // 화면에 나오는 부분
   return (
     <Router>
       <div className="App">
@@ -74,10 +78,13 @@ function App() {
                 <div className="login">
                 <div className="font-title">로그인</div>
                 <div className="kakao">
-                <img src={kakaologin} onClick={KakaoLogin} className="ho" alt="카카오로그인"></img>
-                <div className="first" onClick={kakaoLogout}>로그아웃</div>
-                <div className="first" onClick={unlinkApp}>앱 탈퇴</div>
-                <button onClick={changeTF}>{TF}</button>
+                <div>{
+                !visible && <div onClick={KakaoLogin}><img src={kakaologin} className="ho" alt="카카오로그인" onClick={() => {
+                  setVisible(!visible);
+                }}></img></div>}
+                </div>
+                <div>{visible && <Log/>}</div>
+                <div>{visible && <Unlink/>}</div>
                 </div>
                 <div className="first" onClick={realmain}>처음화면</div>
                 </div>
