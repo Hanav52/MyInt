@@ -13,16 +13,27 @@ import { useEffect, useState } from "react";
 
 
 
-function Real() {
+function Real(props) {
   //자바스크립트 api key
   const JAVA_API_KEY = "49dbb957eb9235eeec3eaf9f85e5b609";
   // 카카오 api 가져오기
   const LoginApi = () => {
     window.Kakao.init(JAVA_API_KEY);
   }
+
+  const [logstate, LogState] = useState(false);
+  console.log(logstate);
+
+  const JsOnline = () => {
+    window.open('http://www.sweethome3d.com/SweetHome3DJSOnline.jsp');
+  }
+  const JsGallery = () => {
+    window.open('http://www.sweethome3d.com/gallery.jsp');
+  }  
+
   // 카카오 api를 렌더링될때 한번만 실행하기
   useEffect(LoginApi, []);
-
+  console.log(props.visible);
   const mail = () => {
     Swal.fire('wnsrl8329@gmail.com 으로 연락 주시면 감사합니다.');
   }
@@ -38,10 +49,10 @@ function Real() {
               </div>
               <ul className="nav justify-content-center">
                 <li className="nav-item fw-bold link-warning">
-                  <Link className="nav-link fw-bold link-warning" to="/intmenu">참고사이트</Link>
+                  <Link className="nav-link fw-bold link-warning" onClick={JsGallery}>참고사이트</Link>
                 </li>
                 <li className="nav-item fw-bold link-warning">
-                  <Link className="nav-link fw-bold link-warning" to="/program">도구</Link>
+                  <Link className="nav-link fw-bold link-warning" onClick={JsOnline}>도구</Link>
                 </li>
                 <li className="nav-item fw-bold link-warning">
                   <Link className="nav-link fw-bold link-warning" to="/submain">프로그램</Link>
@@ -70,7 +81,7 @@ function Real() {
             <Route path="/submain">
               <SubMain/>
             </Route>
-            <Route path="/intmenu">
+            <Route path="/intmenu" >
               <ProgramEx/>
             </Route>
           </Switch>

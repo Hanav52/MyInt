@@ -3,6 +3,7 @@ import "./css/style.css";
 import { useEffect, useState } from "react";
 import kakaologin from './img/kakao_login.png'
 import React from 'react';
+import { useHistory } from "react-router-dom";
 
 function App() {
   // 메인화면으로 이동하기
@@ -10,7 +11,14 @@ function App() {
     window.location.href="/";
   }
 
-  const [visible, setVisible] = useState(false);
+  //   const history = useHistory();
+
+  //    const goToMain = () => {
+  //   history("/");
+  // };
+
+    const [visible, setVisible] = useState(false);
+    console.log(visible);
   
 
   // 로그인함수
@@ -67,6 +75,10 @@ function App() {
       <div onClick={unlinkApp}><div className="first" >앱 탈퇴</div></div>
     )
   }
+
+  // const onClick = () => {
+    
+  // }
         // 화면에 나오는 부분
   return (
     <Router>
@@ -78,13 +90,12 @@ function App() {
                 <div className="login">
                 <div className="font-title">로그인</div>
                 <div className="kakao">
-                <div>{
-                !visible && <div onClick={KakaoLogin}><img src={kakaologin} className="ho" alt="카카오로그인" onClick={() => {
-                  setVisible(!visible);
-                }}></img></div>}
+                <div>{!visible ? <div onClick={KakaoLogin}>
+                                  <img src={kakaologin} className="ho" alt="카카오로그인" onClick={() => { setVisible(!visible); }}/>
+                                 </div> : null}
                 </div>
-                <div>{visible && <Log/>}</div>
-                <div>{visible && <Unlink/>}</div>
+                <div>{visible ? <Log alert={unlinkApp.res}/> : null}</div>
+                <div>{visible ? <Unlink/> : null}</div>
                 </div>
                 <div className="first" onClick={realmain}>처음화면</div>
                 </div>
