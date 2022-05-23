@@ -5,7 +5,7 @@
 body {
   margin: 0 auto;
   color: #3f464d;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Spoqa Han Sans Neo", "Sans-serif";
 }
 
 /* a 링크 태그 스타일 초기화 */
@@ -63,14 +63,6 @@ header {
   height: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-
-.head-container12 {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: flex-end;
   align-items: center;
 }
 
@@ -138,7 +130,7 @@ section {
 }
 
 .pro-head {
-  margin: 2.5rem 0;
+  margin: 2rem 0;
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -369,7 +361,7 @@ li a:hover {
 }
 
 footer {
-  background-color: #fff;
+  background-color: #f8f9fa;
   padding: 1rem 0;
   margin: 1rem 0;
 }
@@ -431,7 +423,8 @@ footer {
   margin-left: 2rem;
   width: 650px;
   height: 350px;
-  background-color: rgba(196, 196, 196, 0.34);
+  overflow:hidden;
+  margin:0 auto;
 }
 .login-explain {
   width: 1420px;
@@ -446,7 +439,8 @@ footer {
   margin-right: 2rem;
   width: 650px;
   height: 350px;
-  background-color: rgba(196, 196, 196, 0.34);
+  overflow:hidden;
+  margin:0 auto;
 }
 .program1-explain1 {
   margin-right: 2rem;
@@ -457,6 +451,11 @@ footer {
 .explain1 {
   font-size: 1.3rem;
   font-weight: bold;
+}
+.image-thumbnail {
+    width:100%;
+    height:100%;
+    object-fit:scale-down;
 }
 
 

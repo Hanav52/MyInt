@@ -15,9 +15,6 @@
     <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="img/fun-coding.ico" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f1def33959.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -27,48 +24,48 @@
           <div class="login">
             <div class="font-title">로그인</div>
             <div class="kakao">
-              <a id="custom-login-btn" href="javascript:loginWithKakao()">
-              <img
-                src="//k.kakaocdn.net/14/dn/btroDszwNrM/I6efHub1SN5KCJqLm1Ovx1/o.jpg"
-                width="222"
-                alt="카카오 로그인 버튼"
-              />
-            </a>
-            <p id="token-result"></p>
-            <script type="text/javascript">
-              function loginWithKakao() {
-                Kakao.Auth.authorize({
-                  redirectUri: 'https://developers.kakao.com/tool/demo/oauth'
-                })
-              }
-              // 아래는 데모를 위한 UI 코드입니다.
-              displayToken()
-              function displayToken() {
-                const token = getCookie('authorize-access-token')
-                if(token) {
-                  Kakao.Auth.setAccessToken(token)
-                  Kakao.Auth.getStatusInfo(({ status }) => {
-                    if(status === 'connected') {
-                      document.getElementById('token-result').innerText = 'login success. token: ' + Kakao.Auth.getAccessToken()
-                    } else {
-                      Kakao.Auth.setAccessToken(null)
-                    }
-                  })
-                }
-              }
-              function getCookie(name) {
-                const value = "; " + document.cookie;
-                const parts = value.split("; " + name + "=");
-                if (parts.length === 2) return parts.pop().split(";").shift();
-              }
-            </script>
+              <img src="img/kakao_login.png" alt="카카오로그인">
             </div>
             <div class="first">처음화면</div>
+            <a id="custom-login-btn" href="javascript:loginWithKakao()">
+              <img
+                  src="./img/kakao_login.png"
+                  width="222"
+                  alt="카카오 로그인 버튼"
+                />
+            </a>
+            <p id="token-result"></p>
           </div>
         </div>
       </div>
     </section>
-
+    <script type="text/javascript">
+  function loginWithKakao() {
+    Kakao.Auth.authorize({
+      redirectUri: 'https://developers.kakao.com/tool/demo/oauth'
+    })
+  }
+  // 아래는 데모를 위한 UI 코드입니다.
+  displayToken()
+  function displayToken() {
+    const token = getCookie('authorize-access-token')
+    if(token) {
+      Kakao.Auth.setAccessToken(token)
+      Kakao.Auth.getStatusInfo(({ status }) => {
+        if(status === 'connected') {
+          document.getElementById('token-result').innerText = 'login success. token: ' + Kakao.Auth.getAccessToken()
+        } else {
+          Kakao.Auth.setAccessToken(null)
+        }
+      })
+    }
+  }
+  function getCookie(name) {
+    const value = "; " + document.cookie;
+    const parts = value.split("; " + name + "=");
+    if (parts.length === 2) return parts.pop().split(";").shift();
+  }
+</script>
     <!-- Optional JavaScript; choose one of the two! -->
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
