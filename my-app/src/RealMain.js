@@ -31,7 +31,7 @@ function RealMain() {
             </div>
             <div className="program1-1">
               <div className="program112">
-                  <div className="pro-head">프로그램1</div>
+                  <div className="pro-head">Js Online</div>
                   <div className="pro-body">여기에는 이 프로그램에 대한 설명을 적을 예정입니다. 하지만 프로그램 개수가 많아질수록
                   <br/>설명하는것도 많아질 예정입니다.</div>
                   <div className="pro-button ">
@@ -39,9 +39,8 @@ function RealMain() {
                   </div>
               </div>
               <div className="program112">
-                <div className="pro-head">프로그램2</div>
-                <div className="pro-body">여기에는 이 프로그램에 대한 설명을 적을 예정입니다. 하지만 프로그램 개수가 많아질수록
-                <br/> 설명하는것도 많아질 예정입니다.</div>
+                <div className="pro-head">전체 이미지</div>
+                <div className="pro-body">왼족에 가구편집 오른쪽 위에는 평면도 오른쪽 아래는 3d로 보여줍니다.</div>
                 <div className="pro-button ">
                   <button type="button" className="head-blog btn btn lg btn-outline-warning" onClick={program1}>더보기</button>
                 </div>
@@ -49,17 +48,15 @@ function RealMain() {
             </div>
             <div className="program1-1">
               <div className="program113">
-                <div className="pro-head">프로그램3</div>
-                <div className="pro-body">여기에는 이 프로그램에 대한 설명을 적을 예정입니다. 하지만 프로그램 개수가 많아질수록
-                <br/>설명하는것도 많아질 예정입니다.</div>
+                <div className="pro-head">평면도</div>
+                <div className="pro-body">9개의 평면도 중에 원하는 것을 선택하여 편집 할 수 있습니다.</div>
                 <div className="pro-button ">
                   <button type="button" className="head-blog btn btn lg btn-outline-warning" onClick={program1}>더보기</button>
                 </div>
               </div>
               <div className="program113">
-                <div className="pro-head">프로그램4</div>
-                <div className="pro-body">여기에는 이 프로그램에 대한 설명을 적을 예정입니다. 하지만 프로그램 개수가 많아질수록
-                <br/>설명하는것도 많아질 예정입니다.</div>
+                <div className="pro-head">제작</div>
+                <div className="pro-body">위쪽은 평면도에서 아랫쪽은 3d로 평면도를 조작하는 것을 나타냅니다.</div>
                 <div className="pro-button ">
                   <button type="button" className="head-blog btn btn lg btn-outline-warning" onClick={program1}>더보기</button>
                 </div>
