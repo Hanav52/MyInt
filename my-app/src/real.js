@@ -10,10 +10,42 @@ import SubMain from "./SubMain";
 import ProgramEx from "./IntMenu";
 import Swal from 'sweetalert2'
 import { useEffect, useState } from "react";
-
-
+import ProHeader from "./Header";
 
 function Real(props) {
+
+  function Header() {
+    return (
+      <div>
+        <header>
+          <div className="inner">
+            <div className="head-container">
+              <div className="head-brand">
+                <Link to="/">MyInt</Link>
+              </div>
+              <ul className="nav justify-content-center">
+                <li className="nav-item fw-bold link-warning">
+                  <Link className="nav-link fw-bold link-warning" onClick={JsGallery}>참고사이트</Link>
+                </li>
+                <li className="nav-item fw-bold link-warning">
+                  <Link className="nav-link fw-bold link-warning" onClick={JsOnline}>도구</Link>
+                </li>
+                <li className="nav-item fw-bold link-warning">
+                  <Link className="nav-link fw-bold link-warning" to="/submain">프로그램</Link>
+                </li>
+                <li className="nav-item fw-bold link-warning">
+                  <Link className="nav-link fw-bold link-warning" onClick={mail}>문의</Link>
+                </li>
+              </ul>
+              <button type="button" className="head-blog btn btn lg btn-warning">
+                <Link to="/app">로그인</Link>
+              </button>
+            </div>
+          </div>
+        </header>
+      </div>
+    )
+  }
   //자바스크립트 api key
   const JAVA_API_KEY = "49dbb957eb9235eeec3eaf9f85e5b609";
   // 카카오 api 가져오기
@@ -41,32 +73,7 @@ function Real(props) {
   return (
     <div>
         <BrowserRouter>
-        <header>
-          <div className="inner">
-            <div className="head-container">
-              <div className="head-brand">
-                <Link to="/">MyInt</Link>
-              </div>
-              <ul className="nav justify-content-center">
-                <li className="nav-item fw-bold link-warning">
-                  <Link className="nav-link fw-bold link-warning" onClick={JsGallery}>참고사이트</Link>
-                </li>
-                <li className="nav-item fw-bold link-warning">
-                  <Link className="nav-link fw-bold link-warning" onClick={JsOnline}>도구</Link>
-                </li>
-                <li className="nav-item fw-bold link-warning">
-                  <Link className="nav-link fw-bold link-warning" to="/submain">프로그램</Link>
-                </li>
-                <li className="nav-item fw-bold link-warning">
-                  <Link className="nav-link fw-bold link-warning" onClick={mail}>문의</Link>
-                </li>
-              </ul>
-              <button type="button" className="head-blog btn btn lg btn-warning">
-                <Link to="/app">로그인</Link>
-              </button>
-            </div>
-          </div>
-        </header>
+        <Header/>
         <>
           <Switch>
             <Route exact path="/">

@@ -121,11 +121,11 @@ section {
 }
 
 .program112 {
-  padding: 0 2rem;
+  padding: 0 4rem;
 }
 
 .program113 {
-  padding: 0 2rem;
+  padding: 0 4rem;
   margin-bottom: 2rem;
 }
 
@@ -161,6 +161,7 @@ section {
 .login-maintitle {
 
 }
+.login-pass 
 
 .message {
   font-size: 1.4rem;
