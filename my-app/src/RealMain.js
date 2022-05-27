@@ -5,6 +5,7 @@ import { BrowserRouter as Link } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 import { Route } from "react-router-dom";
 import Swal from 'sweetalert2'
+import image1 from './img/전체이미지.png';
 
 function RealMain() {
 
@@ -34,47 +35,49 @@ function RealMain() {
               <div className="program112">
                   <div className="pro-head">Js Online</div>
                   <div className="pro-body">Js Online은 프로그램, 웹에서 사용자가 원하는 도면을 가지고 인테리어를 할 수 있습니다.</div>
-                  <div className="pro-button ">
+                  <div className="pro-button">
                     <button type="button" className="head-blog btn btn lg btn-outline-warning" onClick={program1}>더보기</button>
                   </div>
               </div>
               <div className="program112">
                 <div className="pro-head">평면도</div>
                 <div className="pro-body">9개의 평면도 중에 원하는 것을 선택하여 사용자가 원하는 인테리어를 편집 할 수 있습니다.</div>
-                <div className="pro-button ">
+                <div className="pro-button">
                   <button type="button" className="head-blog btn btn lg btn-outline-warning" onClick={program1}>더보기</button>
                 </div>
               </div>
             </div>
             <div className="program1-1">
-              <div className="program113">
-              <div className="pro-head">전체 이미지</div>
-                <div className="pro-body">화면 기준 왼쪽은 가구편집 오른쪽 위는 평면도 오른쪽 아래는 3d로 사용자에게 제공된다.</div>
-                <div className="pro-button ">
-                  <button type="button" className="head-blog btn btn lg btn-outline-warning" onClick={program1}>더보기</button>
-                </div>
+              <div className="program112">
+                  <div className="pro-head">전체 이미지</div>
+                  <div className="pro-body">화면 기준 왼쪽은 가구 편집 오른쪽 위는 평면도 오른쪽 아래는 3d로 사용자에게 제공된다.</div>
+                  <div className="pro-button">
+                    <button type="button" className="head-blog btn btn lg btn-outline-warning" onClick={program1}>더보기</button>
+                  </div>
               </div>
-              <div className="program113">
+              <div className="program112">
                 <div className="pro-head">제작</div>
-                <div className="pro-body">위쪽은 평면도에서 아랫쪽은 3d로 평면도를 조작하는 것을 나타냅니다.</div>
-                <div className="pro-button ">
+                <div className="pro-body">화면 기준 오른쪽에서 위쪽은 평면도에서 아랫쪽은 3d로 평면도를 조작하는 것을 나타냅니다.</div>
+                <div className="pro-button">
                   <button type="button" className="head-blog btn btn lg btn-outline-warning" onClick={program1}>더보기</button>
                 </div>
               </div>
             </div>
+          
           </div>
         </section>
         <section>
           <div className="inner">
           <div className="program1-container">
             <div className="program1-explain">
+              
             </div>
             <div className="program1-explain1">
               <div className="explain1">
-                여기는 프로그램의 이미지를 왼쪽에 보여주고 설명을 해주는 곳입니다.
+              전체 이미지
               </div>
               <div className="explain2">
-                여기는 설명입니다.
+              화면 기준 왼쪽은 가구 편집 오른쪽 위는 평면도 오른쪽 아래는 3d로 사용자에게 제공된다.
               </div>
             </div>
           </div>

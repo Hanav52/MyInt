@@ -161,7 +161,6 @@ section {
 .login-maintitle {
 
 }
-.login-pass 
 
 .message {
   font-size: 1.4rem;
@@ -424,8 +423,21 @@ footer {
   margin-left: 2rem;
   width: 650px;
   height: 350px;
-  overflow:hidden;
+  background-image: url("../img/전체이미지.png");
+  background-size: cover;
   margin:0 auto;
+  background-repeat: no-repeat;
+  z-index: 1;
+  background-color: #2186c4;
+  
+}
+.main {
+  height: 360px; /* 화면 이미지 고정 */
+  background-image: url("https://www.fun-coding.org/assets_lms/images/photodune-4161018-group-of-students-m.jpg");
+  background-size: cover;
+  background-position: center 10%; /* 이미지 위치를 살짝 위로 올리기 위한 position 설정 */
+  background-repeat: no-repeat;
+  z-index: 1;
 }
 .login-explain {
   width: 1420px;
