@@ -5,7 +5,6 @@ import { BrowserRouter as Link } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 import { Route } from "react-router-dom";
 import Swal from 'sweetalert2'
-import image1 from './img/전체이미지.png';
 
 function RealMain() {
 
@@ -25,13 +24,19 @@ function RealMain() {
         <BrowserRouter>
         <Route exact path="/">
         <section>
-          <div className="inner">
-            <div className="program11">
+          <div className="inner1">
+            <div className="main">
+              <div className="frontmain">
               MyInt는 자신이 원하는 도면에
               <br/>인테리어 하는 곳입니다
               <br/><br/>
+              </div>
             </div>
-            <div className="program1-1">
+          </div>
+        </section>
+        <section>
+          <div className="inner">
+          <div className="program1-1">
               <div className="program112">
                   <div className="pro-head">Js Online</div>
                   <div className="pro-body">Js Online은 프로그램, 웹에서 사용자가 원하는 도면을 가지고 인테리어를 할 수 있습니다.</div>
@@ -63,7 +68,6 @@ function RealMain() {
                 </div>
               </div>
             </div>
-          
           </div>
         </section>
         <section>
