@@ -35,7 +35,7 @@ function RealMain() {
           </div>
         </section>
         <section>
-          <div className="inner">
+          <div className="inner3">
           <div className="program1-1">
               <div className="program112">
                   <div className="pro-head">Js Online</div>
@@ -70,8 +70,8 @@ function RealMain() {
             </div>
           </div>
         </section>
-        <section>
-          <div className="inner">
+        <section className="backcolor3">
+          <div className="inner3">
           <div className="program1-container">
             <div className="program1-explain">
               
@@ -88,7 +88,7 @@ function RealMain() {
         </div>
         </section>
         <section>
-          <div className="inner">
+          <div className="inner3">
           <div className="program12-container">
             <div className="login-explain">
               <div className="login-maintitle">
