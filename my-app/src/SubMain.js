@@ -46,7 +46,7 @@ function SubMain() {
             <section>
             <div className="inner">
             <div className="program3-container">
-                <div className="program1-explain">
+                <div className="program3-explain">
                 </div>
                 <div className="program1-explain1">
                 <div className="explain1">
@@ -70,7 +70,7 @@ function SubMain() {
                     여기는 설명입니다.
                 </div>
                 </div>
-                <div className="program2-explain">
+                <div className="program4-explain">
                 </div>
             </div>
             </div>

@@ -72,7 +72,7 @@ function RealMain() {
         </section>
         <section className="backcolor3">
           <div className="inner3">
-          <div className="program1-container">
+          <div className="program1-container1">
             <div className="program1-explain">
               
             </div>

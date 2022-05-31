@@ -45,7 +45,7 @@ a:hover {
   height: 100%; /* align-items 등으로 수직 가운데 정렬을 위해, 알맞은 height 설정이 필요함 */
   margin: 0 auto; /* 가운데 정렬: 동일 요소에 width 가 설정되어 있을 때에만 적용 */
   overflow: hidden; /* 넘치는 영역에 대해서는 표시안되도록 작성해야 함 */
-  padding: 0rem, 2rem, 3rem, 2rem;
+  padding: 2rem 2rem;
 }
 .inner1 {
   width: 100%; /* 가로 사이즈가 1200px 넘는 해상도에서는 max-width 설정 */
@@ -398,6 +398,13 @@ footer {
   padding: 1rem;
 }
 
+.program1-container1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .program1-container {
   margin-top: 3rem;
   width: 100%;
@@ -421,6 +428,14 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+.program4-container {
+  margin-top: 50px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .program3-container {
   margin-top: 50px;
   width: 100%;
@@ -437,8 +452,6 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;
-  background-color: #2186c4;
-  
 }
 .main {
   height: 360px; /* 화면 이미지 고정 */
@@ -480,6 +493,29 @@ footer {
   width: 650px;
   height: 350px;
   overflow:hidden;
+  background-image: url("../img/평면도이미지.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.program3-explain {
+  margin-left: 2rem;
+  width: 650px;
+  height: 350px;
+  background-image: url("../img/가구이미지.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.program4-explain {
+  margin-right: 2rem;
+  width: 650px;
+  height: 350px;
+  overflow:hidden;
+  background-image: url("../img/제작이미지.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
 }
 .program1-explain1 {
   margin-right: 2rem;
@@ -498,7 +534,7 @@ footer {
 }
 
 .backcolor3 {
-  background-color: #cfd8dc;
+  background-color: #f3f0e729;
   
 }
 
@@ -528,7 +564,10 @@ footer {
   }
 }
 @media only screen and (min-width: 1200px) {
-  
+  .inner3 {
+    max-width: 1500px;
+
+  }
 }
 
 @media only screen and (max-width: 980px) {
