@@ -15,7 +15,7 @@ function RealMain() {
     window.location.href="/app";
   }
   const program1 = () => {
-    window.location.href="/program";
+    window.location.href="/submain";
   }
 
   return (

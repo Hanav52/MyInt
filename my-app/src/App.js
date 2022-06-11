@@ -11,6 +11,7 @@ function App() {
     window.location.href="/";
   }
 
+
   //   const history = useHistory();
 
   //    const goToMain = () => {

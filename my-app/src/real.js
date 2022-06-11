@@ -1,16 +1,14 @@
 import "./css/style.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Route, Link } from "react-router-dom";
-import Program from "./Program";
 import App from "./App";
 import RealMain from "./RealMain";
 import { Switch } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 import SubMain from "./SubMain";
-import ProgramEx from "./IntMenu";
 import Swal from 'sweetalert2'
 import { useEffect, useState } from "react";
-import ProHeader from "./Header";
+import { RiBringForward } from "react-icons/ri";
 
 function Real(props) {
 
@@ -21,6 +19,7 @@ function Real(props) {
           <div className="inner">
             <div className="head-container">
               <div className="head-brand">
+              <RiBringForward/>
                 <Link to="/">MyInt</Link>
               </div>
               <ul className="nav justify-content-center">
@@ -79,17 +78,11 @@ function Real(props) {
             <Route exact path="/">
               <RealMain/>
             </Route>
-            <Route path="/program">
-              <Program/>
-            </Route>
             <Route path="/app">
-              <App/>
+              <App />
             </Route>
             <Route path="/submain">
               <SubMain/>
-            </Route>
-            <Route path="/intmenu" >
-              <ProgramEx/>
             </Route>
           </Switch>
           </>

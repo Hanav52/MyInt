@@ -1,5 +1,6 @@
 import "./css/stylemain.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { RiBringForward } from "react-icons/ri";
 
 function Footer() {
 
@@ -8,7 +9,7 @@ function Footer() {
     <div>
         <footer>
             <div class="inner">
-             <div class="footer-message">MyInt</div>
+             <div class="footer-message"><RiBringForward/>MyInt</div>
              <div class="footer-copyright" >© MyInt. Make your House!</div>
             </div>
         </footer>
