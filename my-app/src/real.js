@@ -10,9 +10,16 @@ import Swal from 'sweetalert2'
 import { useEffect, useState } from "react";
 import { RiBringForward } from "react-icons/ri";
 
-function Real(props) {
+function Real() {
+
+  const [visible, setVisible] = useState(true);
+
+  const alertEx = () => {
+    alert('로그인 후 이용 부탁드립니다.')
+  }
 
   function Header() {
+
     return (
       <div>
         <header>
@@ -24,10 +31,10 @@ function Real(props) {
               </div>
               <ul className="nav justify-content-center">
                 <li className="nav-item fw-bold link-warning">
-                  <Link className="nav-link fw-bold link-warning" onClick={JsGallery}>참고사이트</Link>
+                  <Link className="nav-link fw-bold link-warning" onClick={!visible ? JsGallery : alertEx }>참고사이트</Link>
                 </li>
                 <li className="nav-item fw-bold link-warning">
-                  <Link className="nav-link fw-bold link-warning" onClick={JsOnline}>도구</Link>
+                  <Link className="nav-link fw-bold link-warning"onClick={!visible ? JsOnline : alertEx }>도구</Link>
                 </li>
                 <li className="nav-item fw-bold link-warning">
                   <Link className="nav-link fw-bold link-warning" to="/submain">프로그램</Link>
@@ -37,7 +44,7 @@ function Real(props) {
                 </li>
               </ul>
               <button type="button" className="head-blog btn btn lg btn-warning">
-                <Link to="/app">로그인</Link>
+                <Link to="/app">{visible ? "로그인" : "로그아웃"}</Link>
               </button>
             </div>
           </div>
@@ -52,9 +59,6 @@ function Real(props) {
     window.Kakao.init(JAVA_API_KEY);
   }
 
-  const [logstate, LogState] = useState(false);
-  console.log(logstate);
-
   const JsOnline = () => {
     window.open('http://www.sweethome3d.com/SweetHome3DJSOnline.jsp');
   }
@@ -64,7 +68,7 @@ function Real(props) {
 
   // 카카오 api를 렌더링될때 한번만 실행하기
   useEffect(LoginApi, []);
-  console.log(props.visible);
+
   const mail = () => {
     Swal.fire('wnsrl8329@gmail.com 으로 연락 주시면 감사합니다.');
   }
@@ -79,7 +83,7 @@ function Real(props) {
               <RealMain/>
             </Route>
             <Route path="/app">
-              <App />
+              <App setVisible={setVisible} visible={visible}/>
             </Route>
             <Route path="/submain">
               <SubMain/>

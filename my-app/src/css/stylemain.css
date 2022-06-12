@@ -454,6 +454,14 @@ footer {
   z-index: 1;
 }
 .main {
+  height: 1000x; /* 화면 이미지 고정 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -15%;
+  z-index: 1;
+}
+
+.main1 {
   height: 360px; /* 화면 이미지 고정 */
   background-image: url("https://t1.daumcdn.net/cfile/blog/111A6C434E96EEE11A");
   background-size: cover;

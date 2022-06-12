@@ -25,7 +25,7 @@ function RealMain() {
         <Route exact path="/">
         <section>
           <div className="inner1">
-            <div className="main">
+            <div className="main1">
               <div className="frontmain">
               MyInt는 자신이 원하는 도면에
               <br/>인테리어 하는 곳입니다
