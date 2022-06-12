@@ -34,10 +34,10 @@ function Real() {
                   <Link className="nav-link fw-bold link-warning" onClick={!visible ? JsGallery : alertEx }>참고사이트</Link>
                 </li>
                 <li className="nav-item fw-bold link-warning">
-                  <Link className="nav-link fw-bold link-warning"onClick={!visible ? JsOnline : alertEx }>도구</Link>
+                  <Link className="nav-link fw-bold link-warning"onClick={!visible ? JsOnline : alertEx }>도면</Link>
                 </li>
                 <li className="nav-item fw-bold link-warning">
-                  <Link className="nav-link fw-bold link-warning" to="/submain">프로그램</Link>
+                  <Link className="nav-link fw-bold link-warning" to="/submain">설명</Link>
                 </li>
                 <li className="nav-item fw-bold link-warning">
                   <Link className="nav-link fw-bold link-warning" onClick={mail}>문의</Link>
@@ -70,7 +70,7 @@ function Real() {
   useEffect(LoginApi, []);
 
   const mail = () => {
-    Swal.fire('wnsrl8329@gmail.com 으로 연락 주시면 감사합니다.');
+    Swal.fire('wnsrl8329@gmail.com쪽으로 연락 주시면 감사합니다.');
   }
   
   return (
