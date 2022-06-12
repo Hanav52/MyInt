@@ -26,8 +26,6 @@ a:visited {
   color: #3f464d;
 }
 
-
-
 .inner {
   width: 100%; /* 가로 사이즈가 1200px 넘는 해상도에서는 max-width 설정 */
   height: 100%; /* align-items 등으로 수직 가운데 정렬을 위해, 알맞은 height 설정이 필요함 */
@@ -51,11 +49,6 @@ a:visited {
   font-size: 28px;
   color: black;
   text-align: center;
-}
-
-.imghome {
-  width: 30px;
-  height: 38px;
 }
 
 .kakao {

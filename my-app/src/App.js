@@ -52,12 +52,7 @@ function App({visible, setVisible}) {
             })
             window.location.reload();
         }
-
-  const Log = () => {
-    return(
-      <div onClick={kakaoLogout}><div className="first" >로그아웃</div></div>
-    );
-  }
+        
   const Unlink = () => {
     return(
       <div onClick={unlinkApp}><div className="first" >로그아웃</div></div>
