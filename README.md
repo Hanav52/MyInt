@@ -1,4 +1,4 @@
-# AhaStudy
+# MyInt
   Figma & Notion을 사용하여 정리
 
   <h2>설명</h2>
