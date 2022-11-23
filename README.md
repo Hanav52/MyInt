@@ -12,13 +12,17 @@
 
 > JavaScript ES6+, React
 > 
-> HTML5, CSS3, Bootstrap5, Mui, ReactStrap
+> HTML5, CSS3, Bootstrap5
 
 ## 부족한점
 본래 도면 api와 가구 api를 사용하여 만들고 싶었지만 사용하고자 하던 api가 유료여서 사용하지 못하였습니다.
 
 
 ## 화면
+<div>
+  <h5>디자인 초안</h5>
+<img width="99%" src="https://user-images.githubusercontent.com/83685954/203591909-b9b82b1c-bb36-46f8-b65a-e6fa4f38a177.JPG"/>
+</div>
 <div>
   <h5>로그인&회원가입</h5>
 <img width="49%" src="https://user-images.githubusercontent.com/83685954/203502076-4881cbb4-5c39-47ab-a7a5-9dcc769224e9.jpg"/>
