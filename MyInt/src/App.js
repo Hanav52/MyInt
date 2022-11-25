@@ -1,10 +1,11 @@
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, useHistory } from "react-router-dom";
 import "./css/style.css";
 import kakaologin from './img/kakao_login.png'
 import React from 'react';
 
 function App({visible, setVisible}) {
   // 메인화면으로 이동하기
+  const history = useHistory();
   const realmain = () => {
     window.location.href="/";
   }
@@ -14,30 +15,18 @@ function App({visible, setVisible}) {
       window.Kakao.Auth.login({
         scope: 'profile_nickname, account_email',
           success: function(data) {
-            console.log(data);
             window.Kakao.API.request({
               url:'/v2/user/me',
               success: res => {
                const kakao_account = res.kakao_account;
-               console.log(kakao_account);
                const name = JSON.stringify(kakao_account.profile.nickname);
-               alert('어서오세요 ' + name + '님')
+               alert('어서오세요 ' + name + '님');
+               history.push("/");
               }
             });
           }
       })
   }
-  // 로그아웃 함수
-        function kakaoLogout() {
-          if (!window.Kakao.Auth.getAccessToken()) {
-          alert('로그인후 이용해주세요')
-          return
-          }
-          window.Kakao.Auth.logout(function() {
-          alert('로그아웃 되었습니다')
-          })
-          window.location.reload();
-      }
   // 앱 탈퇴 함수
         function unlinkApp() {
             window.Kakao.API.request({
@@ -50,6 +39,7 @@ function App({visible, setVisible}) {
                 alert('로그인후 이용해주세요')
             },
             })
+            alert('로그아웃 되었습니다.')
             window.location.reload();
         }
         

@@ -9,6 +9,7 @@ import SubMain from "./SubMain";
 import Swal from 'sweetalert2'
 import { useEffect, useState } from "react";
 import { RiBringForward } from "react-icons/ri";
+import { JAVA_API_KEY } from "./JavaKey";
 
 function Real() {
 
@@ -43,7 +44,7 @@ function Real() {
                   <Link className="nav-link fw-bold link-warning" onClick={mail}>문의</Link>
                 </li>
               </ul>
-              <button type="button" className="head-blog btn btn lg btn-warning">
+              <button type="button" className="head-blog btn btn lg btn-warning" >
                 <Link to="/app">{visible ? "로그인" : "로그아웃"}</Link>
               </button>
             </div>
@@ -52,8 +53,7 @@ function Real() {
       </div>
     )
   }
-  //자바스크립트 api key
-  const JAVA_API_KEY = "49dbb957eb9235eeec3eaf9f85e5b609";
+
   // 카카오 api 가져오기
   const LoginApi = () => {
     window.Kakao.init(JAVA_API_KEY);
@@ -76,8 +76,8 @@ function Real() {
   return (
     <div>
         <BrowserRouter>
-        <Header/>
         <>
+        <Header/>
           <Switch>
             <Route exact path="/">
               <RealMain/>
